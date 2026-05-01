@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    padding: 0 300px;
+    margin: 0;
+    background-color: hwb(0 10% 90% / 0.89);
+    font-family: "Exo 2", sans-serif;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/stephen-gong-pE6D5nGPBVw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 0 0 40%;
+    min-height: 100vh;
+}
+
+#logo-text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    background-color: hwb(0 10% 90% / 0.60);
+}
+
+#logo-text {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    opacity: 100;
+}
+
+#logo-img {
+    width: 75px;
+    height: auto;
+}
+
+#photo-credit {
+    margin-top: auto;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 60%;
+    min-height: 100vh;
+}
+
+.container-right-upper {
+    display: flex;
+    min-height: 60vh;
+    background-color: white;
+    color: black;
+    border: solid 1px greenyellow;
+}
+
+.container-right-lower {
+    display: flex;
+    min-height: 40vh;
+    background-color: white;
+    color: black;
+    border: solid 1px goldenrod;
+}
+
