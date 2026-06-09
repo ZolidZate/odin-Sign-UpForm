@@ -23,15 +23,49 @@
             <p>This is not a real service, this is only a project just to show you what I'm capable of. The features you see on this page are only for demonstration purposes
                 and have no working functionality.
             </p>
-            <p>Again this is for a demostration only.</p>
+            <p>Again this is for a demonstration only.</p>
         </div>
 
-        <div class="form-signup">
+        <div class="form-signup line-divider">
+            <P>Sign up here!</P>
 
+            <form id="sign-up-form" action="#" method="POST" class="flex-sub-form">
+                <div class="form-column-left">
+                    <label for="firstName" class="form-items">FIRST NAME
+                        <input type="text" id="firstName" name="firstName" required>
+                    </label>
+
+                    <label for="email" class="form-items">EMAIL
+                        <input type="email" id="email" name="email" required>
+                    </label>
+
+                    <label for="password" class="form-items">PASSWORD
+                        <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters">
+                    </label>
+
+                </div>
+
+                <div class="form-column-right">
+                    <label for="lastName" class="form-items">LAST NAME
+                        <input type="text" id="lastName" name="lastName" required>
+                    </label>
+
+                    <label for="phone" class="form-items">PHONE NUMBER
+                        <input type="tel" id="phone" name="phone" reuqired>
+                    </label>
+
+                    <label for="passConfirm" class="form-items">CONFIRM PASSWORD
+                        <input type="password" id="passConfirm" name="password" required minlength="8" placeholder="At least 8 characters">
+                    </label>
+
+                </div>
+
+            </form>
         </div>
         
         <div class="container-right-lower">
-
+            <button type="submit" form="sign-up-form" class="create-account">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 

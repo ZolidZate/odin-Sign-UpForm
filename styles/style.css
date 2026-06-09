@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --left-al: 60px;
+    --right-al: 150px;
+}
+
 body {
     display: flex;
     padding: 0 300px;
@@ -12,7 +17,16 @@ p {
     color: black;
     font-size: 22px;
     font-weight: 500;
-    border: solid 1px black;
+}
+
+form {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+a, a:link, a:visited {
+    color: #596D48;
+    text-decoration: none;
 }
 
 .container-left {
@@ -60,32 +74,101 @@ p {
     flex: 0 0 60%;
     min-height: 100vh;
     box-sizing: border-box;
+    justify-content: space-evenly;
 }
 
 .container-right-upper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: 60vh;
+    box-sizing: border-box;
+    padding-top: 75px;
+    flex: 1;
     background-color: white;
     color: black;
-    border: solid 1px greenyellow;
-    padding-left: 60px;
-    padding-right: 150px;
-    background-color: #f7f9fc;
+    padding-left: var(--left-al);
+    padding-right: var(--right-al);
+    background-color: #e8e8e9;
 }
 
 .form-signup {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding-left: var(--left-al);
+    padding-right: var(--right-al);
     background-color: white;
-    border: solid 1px black;
+    flex: 1;
+}
+
+.line-divider {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 18px 24px -10px rgba(0,0,0,0.20);
+}
+
+.flex-sub-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.form-column-left {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    flex: 1;
+}
+
+.form-column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    flex: 1;
+}
+
+.form-items input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;   
 }
 
 .container-right-lower {
+    box-sizing: border-box;
     display: flex;
-    min-height: 40vh;
-    background-color: #f7f9fc;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* min-height: 40vh; */
+    flex: 1;
+    padding-left: var(--left-al);
+    padding-right: var(--right-al);
+    background-color: #d6d8db;
     color: black;
-    border: solid 1px goldenrod;
-    padding-left: 20px;
+    padding-top: 30px;
 }
 
+.create-account {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    padding: 15px 50px;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: #596D48;
+    border: none;
+}
+
+.container-right-lower p {
+    font-size: 16px;
+    font-weight: 550;
+}
+
+input[type="password"]:user-invalid {
+    border: 2px solid red;
+    outline: none;
+}
